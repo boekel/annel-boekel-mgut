@@ -1,9 +1,9 @@
-# MATLAB HS13 – Research Plan (Template)
+﻿# MATLAB HS13 – Research Plan
 (text between brackets to be removed)
 
-> * Group Name: (be creative!)
-> * Group participants names: (alphabetically sorted by last name)
-> * Project Title: (can be changed)
+> * Group Name: TBA
+> * Group participants names: Lukas Boeke, Melanie Gut, Anne-Michelle Luescher
+> * Project Title: Opinion Formation
 
 ## General Introduction
 
@@ -36,9 +36,11 @@
 
 ## Research Methods
 
+Agent-Based auf jeden Fall (is ja sehr realitätsnah), vielleicht mit CA?
 (Cellular Automata, Agent-Based Model, Continuous Modeling...) (If you are not sure here: 1. Consult your colleagues, 2. ask the teachers, 3. remember that you can change it afterwards)
 
 
 ## Other
 
+Da müssten wir mal welche suchen ;)
 (mention datasets you are going to use)
