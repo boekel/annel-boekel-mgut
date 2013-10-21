@@ -1,7 +1,7 @@
 ﻿# MATLAB HS13 – Research Plan
 
 * Group Name: The Opinion Formers
-* Group participants names: Lukas Boeke, Melanie Gut, Anne-Michelle Luescher
+* Group participants names: Lukas Boeke, Melanie Gut, Anne Luescher
 * Project Title: Opinion Formation
 
 ## General Introduction
