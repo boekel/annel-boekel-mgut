@@ -1,68 +1,44 @@
 ﻿# MATLAB HS13 – Research Plan
-(text between brackets to be removed)
-(text in German to be removed)
 
-> * Group Name: The Opinion Formers ;)
-> * Group participants names: Lukas Boeke, Melanie Gut, Anne-Michelle Luescher
-> * Project Title: Opinion Formation
+* Group Name: The Opinion Formers
+* Group participants names: Lukas Boeke, Melanie Gut, Anne-Michelle Luescher
+* Project Title: Opinion Formation
 
 ## General Introduction
 
-
-We found out that existing simulations about opinion formation don´t cover the fact that agents do not meet randomly and that the agents stubbornness and convicibility are not taken account of.
-This way we (hope to) get more realistic simulations and more detailed analysis of opinion convergence.
-Opinion Formation is a phenomenon that can be observed in many aspects of human life.
+While reading the papers indicated below, we found out that various approaches can be used to model opinion formation and the dynamical development of changes in opinion. We focused on the article [1], where opinion convergenve of interaction between individuals is simulated. The model used is very simple and straightforward, only containing one main formula; however, it seems to depict opinion convergence accuratly in a qualitative way. In [3] a rather complex approach is chosen, using a more mathematical than "common sense" formulation. However, the article does not focus specifically on opinion formation but rather on behavioural changes based on social interactions. The goal of this project will be to expand the first model by adding elements similar to [3] to make it more realistic.
 
 ## The Model
 
-We concentrate on improving an existing model by taking account of the following:
-> * How can we express different opinions? Can we measure the "distance" between opinions?
-> * How can we implement the effect of stubbornness and convincibility?
-> * How should these factors be weighted? (Can we use physics?)
-(Define dependent and independent variables you want to study. Say how you want to measure them.)
-(Why is your model a good abtraction of the problem you want to study?)
-(Are you capturing all the relevant aspects of the problem?)
-
+We want to attempt to combine two approaches by adding one (or several) variables to the equation used in [1], which shall take into account the "charisma" of the agents (the exact name of that variable and its implementation will be revealed during the work process). We think that while the model in [1] works well in its simplicity it would become more realistic if we considered the logical fact that not every individual has the same amount of influence on peers. Thus, one agent may possibly have a greater impact on the interacting agent´s opinion than the other way round. We will try to make realistic assumptions as to which individuals (the extreme ones or the less extreme ones) have a greater ability of influencing peers.
 
 ## Fundamental Questions
 
-How do our additional assumptions about opinion formation influence the results of previous simulations?
-To what extent does the convincibility factor influence the outcome of the simulation, or can it be ignored?
-People tend to meet their "friends" (wich have a similar opinion) more often or tend to abvoid people they don´t like (because of their opinion?), such that it is not to expect that an agents opinion changes significantly.
+The important questions are:
 
-(At the end of the project you want to find the answer to these questions)
-(Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
-
+* How can we express different opinions? Can we measure the "distance" between opinions?
+* How can we implement the effect of stubbornness and convincibility ("charisma")?
+* How should these factors be weighted and included in the model? (Can we use physics, as in [3]?)
 
 ## Expected Results
 
-We expect that the formation of clusters will change because, as in reality, convincibility and stubbornness influence the convergence of opinion formations.
-(What are the answers to the above questions that you expect to find before starting your research?)
+What we want to know in the end are the answers to the following questions:
 
+* How do our additional assumptions about opinion formation influence the result of the conducted simulations mentioned in [1]?
+* Does the convincibility factor influence the outcome of the simulation significantly and if so, to what extent? Can it be ignored or not?
 
+We expect a change in the patterns of the clusters, as we assume that social factors play a significant role in opinion formation and convergence.
 ## References 
 
-Laguna, Abramson, Zanette: Minorities in a Model for Opinion Formation; 
+[1] Laguna, Abramson, Zanette: Minorities in a Model for Opinion Formation; 
 2004 Wiley Periodicals, Inc.; Vol. 9, No.4
 
-Holme, Newman: Nonequilibrium phase transition in the coevolution of networks and opinions
+[2] Holme, Newman: Nonequilibrium phase transition in the coevolution of networks and opinions
 arXiv:physics/0603023v3
 
-Helbing: A Mathematical Model for the Behavior of Individuals in a Social Field
+[3] Helbing: A Mathematical Model for the Behavior of Individuals in a Social Field
 arXiv:cond-mat/9805194v1
-
-(Add the bibliographic references you intend to use)
-(Explain possible extension to the above models)
-(Code / Projects Reports of the previous year)
-
 
 ## Research Methods
 
-Agent-Based Model, maybe we can use Cellular Automata for this purpose.
-(Cellular Automata, Agent-Based Model, Continuous Modeling...) (If you are not sure here: 1. Consult your colleagues, 2. ask the teachers, 3. remember that you can change it afterwards)
-
-
-## Other
-
-Da müssten wir mal welche suchen ;)
-(mention datasets you are going to use)
+An Agent-Based Model seems to be perfect for our simulations, we will get more precise on this when we clearly defined our model.
