@@ -1,10 +1,9 @@
-%% Unsere Erweiterung mit dem Charisma-Faktor
-%  Sehr ueberzeugende Agenten werden im Plot hervorgehoben
-%  30.11.2013 13:45
-%  Lukas
+%% Our model with the charisma factor
+%  MSSSM - HS13 - Opinion Convergence
+%  The Opinions Formers
 %% Initialization
 % number of agents
-N = 100;
+N = 200;
 % number of iterations
 iter = 2000;
 % convergence parameter
@@ -18,8 +17,6 @@ M = zeros(N, iter);
 M(:, 1) = rand(N, 1);
 % initialize charisma
 gamma = rand(N, 1);
-% Grenze, ab welcher Agenten im Plot hervorgehoben werden
-v = 0.8;
 
 %% Calculation
 for t=1:iter-1
@@ -43,19 +40,14 @@ for t=1:iter-1
 end
 
 %% Plot
+% title('');
 for i=1:N-1
-    if (gamma(i)>v)
-        plot(M(i, :), 'r');
-        hold on
-    else
-        plot(M(i, :), 'b')
-        hold on
-    end
-end
-if (gamma(N)>v)
-        plot(M(N, :), 'r');
-        hold on
-else
-    plot(M(N, :), 'b')
+    plot(M(i, :))
     hold on
 end
+plot(M(N, :));
+xlabel('Number Of Iterations');
+ylabel('Opinion');
+saveas(gcf, 'charisma_1', 'bmp');
+seed = RandStream.getGlobalStream;
+save('charisma', 'N', 'iter', 'c', 'u', 'M', 'gamma', 'seed');
